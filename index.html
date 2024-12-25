@@ -1,1 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="travel_recommendation.js"></script>
+    <title>TravelBloom</title>
+</head>
+<body>
+    <nav>
+        <div id="logo"><i class="fa fa-plane fa-3x logo" aria-hidden="true"></i>
+           <img src="logo.png" width="40px"> <p class="name">TravelBloom</p></div>
+        <div class="links">
+        <a href="#home">HOME</a>
+        <a href="#about">ABOUT US</a>
+        <a href="#contact">CONTACT US</a>
+        </div>
+        <div id="search">
+            <input id="searchinput" type="text" placeholder="Enter a destination or keyword" />
+            <i class="fa fa-search searchicon" aria-hidden="true"></i>
+            <img src="search.png" width="20px">
+            <button id="searchbtn" class="btn" type="button" >Search</button>
+            <button id="clearbtn" class="btn" type="button" >Clear</button>
+        </div>
+        <div id="dropdown">
+            <div class="dropdown-header"><button id="close-btn">X</button></div>
+            <div id="resultContainer">
+                
+            </div>
+        </div>
+    </nav>
+    <div id="background">
+        <div class="sociallinks">
+            <div class="verticalline"></div>
+                    <a href="https://twitter.com/?lang=en" target="_blank"><i class="fa fa-twitter fa-2x linkslogo" aria-hidden="true"></i></a>
+                    <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook fa-2x linkslogo" aria-hidden="true"></i></a>
+                    <a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram fa-2x linkslogo" aria-hidden="true"></i></a>
+                    <a href="https://www.youtube.com/" target="_blank"><i class="fa fa-youtube-play fa-2x linkslogo" aria-hidden="true"></i></a>
+        </div>
+       <section id="home">
+        <div class="icon"></div>
+        <div class="info">
+        <h1>Explore<br>Dream<br>Destination</h1>
+        <p> It encourages exploration of unfamiliar territories, embrace
+diverse cultures and landscaes, while pursuing the desired destination that captivates the heart and ignites a sense of wonder</p>
+        <button name="Book" class="bookbtn" value="Book">BOOK NOW</button>
+        </div>
+    </section>
+    <section id="about">
+        <div class="icon"></div>
+        <div class="info">
+        <h1>ABOUT US</h1>
+        <p>Welcome to Our Company! We are a team of passionate individuals dedicated to providing excellent services/products to our customers. Our mission is to provide the best experience for people traveling to different destinations around the world. Our values include integrity, innovation, customer satisfaction, and teamwork. We believe in putting our customers first and working together to achieve our goals. Feel free to explore our website to learn more about what we offer!</p>
+        <div class="team">
+            <h2>OUR TEAM</h2>
+            <div class="team1"><h4>John Doe</h4>
+                <div class="role">CEO</div>
+            </div>
+            <div class="team1"><h4>Celina Thomas</h4>
+                <div class="role">Team Lead</div>
+            </div>
+            <div class="team1"><h4>Mike Tysen</h4>
+                <div class="role">Delivery Head</div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <section id="contact">
+        <div class="icon"></div>
+        <div class="info">
+            <h1>CONTACT US</h1>
+            <form>
+                <label class="labels"for="name">Name:</label><br>
+                <input class="inputval"type="text" id="name" name="name" placeholder="Enter your name"/><br>
+                <label class="labels"for="e-mail">E-mail:</label><br>
+                <input class="inputval"type="e-mail" id="e-mail" name="e-mail" placeholder="Enter your e-mail"/><br>
+                <label class="labels"for="message">Message</label><br>
+                <textarea class="inputval" id="message" placeholder="Enter your message"></textarea>
+                <input type="submit" class="submitmessagebtn" value="Submit">
+            </form>
 
+        </div>
+    </section>
+</div>
+<div class="Result" id="Result"></div>
+</body>
+</html>
